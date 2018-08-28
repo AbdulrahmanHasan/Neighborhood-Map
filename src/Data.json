@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Habib-i Neccar Camii",
+    "type": "Mosque",
+    "latitude": 36.2015599,
+    "longitude": 36.16547
+  },
+  {
+    "name": "Hatay Devlet Hastanesi",
+    "type": "Hospital",
+    "latitude": 36.2149415,
+    "longitude": 36.1365097
+  },
+  {
+    "name": "Antakya Atatürk Stadyumu",
+    "type": "Stadium",
+    "latitude": 36.2118033,
+    "longitude": 36.158379
+  },
+  {
+    "name": "Palladium Mall",
+    "type": "Supermarket",
+    "latitude": 36.2082616,
+    "longitude": 36.1613483
+  },
+  {
+    "name": "Hatay Künefe Salonu",
+    "type": "food",
+    "latitude": 36.202396,
+    "longitude": 36.161336
+  },
+  {
+    "name": "Vali Ürgen Parkı",
+    "type": "Park",
+    "latitude": 36.2087374,
+    "longitude": 36.1583557
+  }
+]

@@ -1,0 +1,86 @@
+html,
+body
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+.filter {
+  font-size: 1.1em;
+  float: right;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0.9;
+  transform: translate(-100%, -50%);
+  transition: all 0.4s ease;
+}
+.filter.show {
+  transform: translate(0%, -50%);
+
+  transition: all 0.4s ease;
+}
+.locations-list {
+  padding: 0;
+  margin: 5px;
+  overflow: auto;
+}
+
+.input {
+  padding: 5px 10px;
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  width: auto;
+}
+
+
+.place {
+  font-family: "Segoe UI", Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  transition: all 500ms ease;
+  padding: 15px 0 15px 5px;
+}
+
+.place:hover {
+  background-color: #11acc0;
+  padding-left: 12px;
+}
+
+.filter span {
+  color: black;
+  position: absolute;
+  top: 37%;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  padding: 2px 3px;
+  background: #eee;
+  text-orientation: upright;
+  border-radius: 0 5px 5px 0;
+  font-size: 15px;
+  right: -7.2%;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media screen and (max-width: 321px) {
+  .input {
+    width: 92.9%!important;
+  }
+  .filter {
+    width:92% !important;
+  }
+} 
