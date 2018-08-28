@@ -18,9 +18,9 @@ class App extends Component {
   }
 
   // google map and foursquare api Keys
-  keyApi = `AIzaSyB2RDsZdSYtKsQPZeF8c6R7txAYQhI5RAU`;
-  foursquareId = 'YAZPFHNMO0ZEAIEBYS4LOX5GSBDL3SPISMWHZUOPP3KVGTGC';
-  foursquareSecret = 'SFYXKVSQTBZTKOUC2LM0W20HHRVUPSQPKJPNOT1F4E22ALHK';
+  keyApi = `add_Api_Key`;
+  foursquareId = `add_foursquareId`;
+  foursquareSecret = `add_foursquareSecret`;
 
   //componentDidMount to get invoked immediately after a component is mounted
   componentDidMount() {
