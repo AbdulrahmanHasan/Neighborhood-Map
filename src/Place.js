@@ -6,7 +6,7 @@ function Place(props) {
     <li
       role="button"
       className="place"
-      tabIndex={"-1"}
+      tabindex="0"
       onKeyPress={props.populateBasedInfoWindow.bind(this, props.name.marker)}
       onClick={props.populateBasedInfoWindow.bind(this, props.name.marker)}>
       {props.name.information}

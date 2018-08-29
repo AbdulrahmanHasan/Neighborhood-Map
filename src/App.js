@@ -18,26 +18,29 @@ class App extends Component {
   }
 
   // google map and foursquare api Keys
-  keyApi = `add_Api_Key`;
-  foursquareId = `add_foursquareId`;
-  foursquareSecret = `add_foursquareSecret`;
+  keyApi = `AIzaSyB2RDsZdSYtKsQPZeF8c6R7txAYQhI5RAU`;
+  foursquareId = 'YAZPFHNMO0ZEAIEBYS4LOX5GSBDL3SPISMWHZUOPP3KVGTGC';
+  foursquareSecret = 'SFYXKVSQTBZTKOUC2LM0W20HHRVUPSQPKJPNOT1F4E22ALHK';
 
   //componentDidMount to get invoked immediately after a component is mounted
   componentDidMount() {
     window.initMap = this.initMap;
     // fetching google map url 
-    new Promise((reject) => {
+    window.gm_authFailure = () => {
+      if (this.keyApi === 'add_Api_Key') {
+        prompt('No api key. Please include one', this.keyApi);
+      } else {
+        alert('invalid API key!');
+      }
+    };
       const script = document.createElement('script');
       document.body.appendChild(script);
-      script.onerror = reject;
       script.async = true;
       script.src = `https://maps.googleapis.com/maps/api/js?key=${this.keyApi}&v=3&callback=initMap`;
-    })
-    // catching the error
-    .catch((error) => {
-      console.log(`Sorry google maps can't be loaded please check your url`);
-    })
-  }
+      script.onerror = () => {
+        alert(`Sorry google maps can't be loaded please check your url`);
+      };
+    }
 
   //Initialise the google map
   initMap() {

@@ -72,7 +72,7 @@ class ListView extends Component {
           className="input"
           placeholder="Filter by name or type"
         />
-      <span role="button" id="show-filter">filter</span>
+      <span role="button" aria-label="Filter list button" tabindex="1" id="show-filter">filter</span>
         <ul className="locations-list">
           {locationlist}
         </ul>
